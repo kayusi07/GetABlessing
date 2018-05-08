@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Get Blessed</string>
+    <string name="name_1">Let\'s get started!</string>
+    <string name="name_2">Please enter your name:</string>
+    <string name="name_4">Feel Blessed</string>
+    <string name="time">Your Blessing Notification will display at 8 a.m. daily.</string>
+    <string name="ad_banner">ca-app-pub-5152778234781012/9359054584</string>
+    <string name="notification_title">Blessings</string>
+    <string name="notification_subject">Good Morning</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="about">WHY Get Blessed?</string>
+    <string name="about_1">All it takes to wish someone good luck is to send a thoughtful message.</string>
+    <string name="about_2">Bleassings are very crucial. They help keeps us going in life.</string>
+    <string name="about_3">Blessings are directly associated with, and are believed to come from, God. </string>
+    <string name="about_4">To express a blessing is like bestowing a wish on someone that they experience the favor of God, and to acknowledge God as the source of all blessing.</string>
+
+
+
+</resources>
