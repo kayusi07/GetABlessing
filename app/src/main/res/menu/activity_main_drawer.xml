@@ -12,6 +12,10 @@
         android:icon="@drawable/about"
         android:title="WHY get blessed?" />
     <item
+        android:id="@+id/nav_devotion"
+        android:icon="@drawable/dp"
+        android:title="Devotions For Women" />
+    <item
         android:id="@+id/nav_rate"
         android:icon="@drawable/rate"
         android:title="Rate App" />

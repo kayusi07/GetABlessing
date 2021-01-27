@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Women, like men, are strong. With the Lord, they are unstoppable. These 10 inspiring devotions are meant to encourage women to do whatever they want to do and let no sexuality barrier stop them. May everyone who has read these prayers be inspired to be braver in facing their daily lives."
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:textStyle="italic">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="A gracious woman gets honor, and violent men get riches"
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lord God, teach me to become gracious in whatever situation I may be in. I may not get piles and piles of money but I believe, by your grace, I will be dignified. I am forever grateful for everything that You have given me.
+
+Be with me, Lord, through all my battles. With the intercession of Mary Our Mother. Amen."
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="She opens her mouth with wisdom and the teaching of kindness is on her tongue."
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dearest Father Almighty, teach me to only speak words of kindness like how Jesus spoke. Teach me to be nicer to all those who I come across with . Teach me to become more giving to those who are in need. I pray that I be more gentle with my words and actions to be more like Your Son Jesus. Amen."
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="The wisest of women builds her house but folly with her own hands tears it down."
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heavenly Father, we praise and glorify your name for all the wonderful works you have blessed us with. Thank you for giving us the gift of wisdom to do always what is right and choose a better choice at all times.
+
+May we use this wisdom wisely and make decisions at all times. All these we pray with Mary our Mother. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Do not let your adorning be external — the braiding of hair and the putting on of gold jewelry, or the clothing you wear–"
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="God Almighty, we give you glory for all the works you have brought in our days. Now we pray that you give us the confidence to know that we are beautiful in our own ways, that we do not need piles of make up or layers of jewelry.
+
+Pray for us that we be free from all forms of vanity. We believe that we are beautiful in your eyes and your judgment is the only thing that really matters. May we be free of our insecurities. Without them, we may be free and we may live in peace with ourselves. We pray this with Mary Our Mother, the most beautiful woman that has walked on Earth. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Charm is deceitful, and beauty is vain, but a woman who fears the Lord is to be praised."
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jesus, thank you for saving us from our sins. You have fearlessly died on the cross for our salvation. You have showed us what unconditional love truly means. Lord, teach us to be fearful of Your father. Not because we are afraid but because we do not want to lose sight of him. He has created us and given you to us to have peace here on earth.
+
+We pray to become like Your mother Mary. She has carried you in her womb with no questions. She just did it because she believed in the Father. May we also learn how to trust God with no questions and do his will with all our hearts. In your name, we pray. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="“For I know the plans I have for you,” says the Lord. “They are plans for good and not for disaster, to give you a future and a hope.”"
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lord God, I trust you with all my heart and soul. I believe that you have planned something bigger for me, something that I’ve always wanted. Bless me, Father, with patience that I may wait eagerly as you continue to unfold what you have planned for me.
+
+May this plan of yours be of help to others. May they also have the same enthusiasm that I have for the plans you have for them. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="If God is for us, who can ever be against us?"
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Father, we believe that you are always with us and your Son Jesus will defend us at all times. We praise and thank You for your loving presence. Thank You, Father, for always being there for us during the times of trouble. You are with us when we are happy and you are still when we are weary.
+
+We pray that you teach us to become like You towards our family and friends. Teach us to be more supportive of them and how to fight for them when evils comes right in their face. Grant us strength, Lord. All these we ask in Jesus your son’s name. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Taste and see that the Lord is good; blessed is the man who takes refuge in Him."
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lord God, I pray that I become a better servant to you. I pray that I learn how to submit to you and do all things in your will. May I learn how to rely on you when I am in trouble and even when doing decisions. Keep me under your wing and protect me from the snares of evil.
+
+I believe in Your power as You are the one who guides me and leads me away from Satan’s temptations. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="But I say, walk by the Spirit and you will not gratify the desires of the flesh."
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sweet Jesus, teach us to be contented with what we have. Let not material gifts be the cause of our joy. Teach us to be delighted in what God the Father has given us.
+
+Teach us to be like you, to be strong when temptation comes our way. Teach us not to pay attention to these and disregard them right away. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction."
+                    android:textColor="#3897A5"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dearest Lord, we may not be as wise as your son Jesus but we trust you and your goodness. We believe that there is your kingdom that waits for us and we will live with you in everlasting life.
+
+May we be fully knowledgeable of your love for us. We do all things for your glory, Lord. Amen."
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

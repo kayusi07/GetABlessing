@@ -3,7 +3,6 @@ package com.kayushi07.getablessing;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,22 +10,21 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.app.AlertDialog;
 import android.widget.TimePicker;
@@ -35,7 +33,11 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import org.w3c.dom.Text;
+
 import java.util.Calendar;
+import java.util.Objects;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by Ayushi on 12-04-2018.
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "GET_BLESSED_ALARM";
     int mHour;
     int mMinute;
-    TextView timeTxt;
+    TextView timeTxt, txtbb;
     private NavigationView navigationView;
     private DrawerLayout drawer;
     private View navHeader;
@@ -66,10 +68,31 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        txtbb = (TextView) findViewById(R.id.txtbb);
+        int random = ThreadLocalRandom.current().nextInt(1, 100);
+        String sb = BlessedData.getData()[random];
+        txtbb.setText(sb);
+
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         Button getBlessing = (Button) findViewById(R.id.b_play);
+        Button getAll = (Button) findViewById(R.id.btn_list);
+        getAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BlessingList.class));
+            }
+        });
+        Button devo = (Button) findViewById(R.id.btn_devotion);
+        devo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DevotionActivity.class));
+            }
+        });
+
         navHeader = navigationView.getHeaderView(0);
         final TextView userNameTxt = (TextView) navHeader.findViewById(R.id.userNameNav);
+
         timeTxt = (TextView) findViewById(R.id.time);
         prefs = PreferenceManager
                 .getDefaultSharedPreferences(this);
@@ -132,8 +155,13 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, AboutUs.class));
                         drawer.closeDrawers();
                         return true;
+                    case R.id.nav_devotion:
+                        startActivity(new Intent(MainActivity.this, DevotionActivity.class));
+                        drawer.closeDrawers();
+                        break;
                     case R.id.nav_rate:
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.kayushi07.getablessing")));
+                        drawer.closeDrawers();
                         break;
                     case R.id.nav_feedback:
                         Intent localIntent = new Intent(Intent.ACTION_SEND);
@@ -171,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
         userNameTxt.setText("" + userName);
 
         mHour = prefs.getInt("mmHour", 8);
-        mMinute = prefs.getInt("mmMinute", 0);
+        mMinute = prefs.getInt("mmMinute", 00);
 
         timeTxt.setText("Your Blessing Notification will display at " + mHour + ":" + mMinute + " daily.");
 
@@ -244,14 +272,21 @@ public class MainActivity extends AppCompatActivity {
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
         alarmIntent = new Intent(MainActivity.this, AlarmReceiver.class);
-        pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, alarmIntent, 0);
+        pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 1, alarmIntent, 0);
 
         Calendar alarmStartTime = Calendar.getInstance();
 
         alarmStartTime.set(Calendar.HOUR_OF_DAY, selHour);
         alarmStartTime.set(Calendar.MINUTE, selMinute);
 
-        alarmManager.setInexactRepeating(AlarmManager.RTC, alarmStartTime.getTimeInMillis(), getInterval(), pendingIntent);
+//        alarmManager.setInexactRepeating(AlarmManager.RTC, alarmStartTime.getTimeInMillis(), getInterval(), pendingIntent);
+
+//        if (alarmStartTime.before(Calendar.getInstance())) {
+//            alarmStartTime.add(Calendar.DATE, 1);
+//        }
+
+
+
 
         SharedPreferences.Editor editor = prefs
                 .edit();
@@ -271,6 +306,13 @@ public class MainActivity extends AppCompatActivity {
             editor.putString("greetTitle", "Good Night " + userName + "!");
         }
         editor.commit();
+
+
+        Objects.requireNonNull(alarmManager).setRepeating(AlarmManager.RTC_WAKEUP, alarmStartTime.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+
+//        Objects.requireNonNull(alarmManager).setExact(AlarmManager.RTC_WAKEUP,
+//                alarmStartTime.getTimeInMillis(), pendingIntent);
+
 
     }
 

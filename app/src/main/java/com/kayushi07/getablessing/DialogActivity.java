@@ -1,11 +1,14 @@
 package com.kayushi07.getablessing;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -23,10 +26,15 @@ public class DialogActivity extends AppCompatActivity{
 
         setContentView(R.layout.activity_dialog);
 
+        final SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+
+        String bless = prefs.getString("blessing_today", null);
+
+
         Button done = (Button) findViewById(R.id.btn_done);
         TextView txt = (TextView) findViewById(R.id.txt_bless);
         Intent i = getIntent();
-        String bless = i.getStringExtra("blessing");
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
